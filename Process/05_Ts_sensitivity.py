@@ -410,9 +410,8 @@ for depth in [320,160,240]:
 ## -----------------------------------------------------------------------------------------------------------------------------
 # Define models and depth levels
 models = [
-    "CAS-ESM2-0", "CESM2", "CESM2-FV2", "CESM2-WACCM", "CMCC-CM2-SR5", 
-    "CMCC-ESM2", "CNRM-CM6-1-HR", "CNRM-CM6-1", "CNRM-ESM2-1", "E3SM-1-1",
-    "FGOALS-f3-L", "FGOALS-g3", "GFDL-CM4", "GFDL-ESM4", "MIROC6", "MIROC-ES2L", 
+    "CESM2", "CESM2-FV2", "CESM2-WACCM", "CNRM-CM6-1-HR", "CNRM-CM6-1", "CNRM-ESM2-1", 
+    "E3SM-1-1", "FGOALS-f3-L", "FGOALS-g3", "GFDL-CM4", "GFDL-ESM4", "MIROC6", "MIROC-ES2L", 
     "MPI-ESM1-2-HR", "MPI-ESM1-2-LR", "NorESM2-LM", "NorESM2-MM", "TaiESM1"
 ]
 years = 2014-1982+1
@@ -462,7 +461,7 @@ for modelname in models:
             ds.attrs['model'] = modelname
 
             # Define output directory and save
-            output_dir = f'../Data/Simulated_grid_sensitivity/{int(depth*100)}/'
+            output_dir = f'../Data/Ts_seasonal_sensitivity/Simulated_grid_sensitivity/{int(depth*100)}/'
             os.makedirs(output_dir, exist_ok=True)
             output_file = os.path.join(output_dir, f'{modelname}_tsl_seasonalcycle_avg.nc')
             ds.to_netcdf(output_file)
