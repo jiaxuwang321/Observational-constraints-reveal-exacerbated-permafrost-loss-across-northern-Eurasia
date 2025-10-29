@@ -1,5 +1,5 @@
-# Manuscript Code Repository  
-**Observational constraints reveal exacerbated permafrost loss across northern Eurasia**  
+# Manuscript Code Repository 
+**Observational constraints reveal exacerbated permafrost loss across northern Eurasia (submitted)**  
 [![DOI](https://zenodo.org/badge/1056881709.svg)](https://doi.org/10.5281/zenodo.17196880)
 Git project initialized: 15 Sep 2025  
 
