@@ -164,7 +164,7 @@ for depth in [320,160,240]:
     #                       Calculate the soil temperature sensitivity of each site for each year
     ## -----------------------------------------------------------------------------------------------------------------------------
     
-    q = xr.open_dataset('../Data/Probability_pf/probability_lt_threshold_'+str(depth)+'.nc')
+    q = xr.open_dataset('../Data/probability_lt_threshold_'+str(depth)+'.nc')
     lat, lon = q['lat'][:], q['lon'][:]
     per_extent = q['probability_lt_threshold'][:,:]
 
@@ -419,7 +419,7 @@ years = 2014-1982+1
 # Main processing loop
 for modelname in models:
     # Search for the model file
-    alt_file = glob.glob(f"/home/wangjx/Data/cmip6_tsl_05_depth_interpolated/{modelname}_*.nc")[0]
+    alt_file = glob.glob(f"../Data/cmip6_tsl_05_depth_interpolated/{modelname}_*.nc")[0]
 
     # Open dataset
     with xr.open_dataset(alt_file, decode_times=False) as f:
