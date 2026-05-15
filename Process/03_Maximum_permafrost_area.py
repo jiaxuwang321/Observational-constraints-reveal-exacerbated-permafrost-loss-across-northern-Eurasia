@@ -2,7 +2,7 @@
     # This code is to calculate the probability of permafrost in each grid, across 18 CMIP6 models.
     # 1. Read the ALT file "../Data/cmip6_alt_m15_NH45_1850_2100/", select 1982-2014.
     # 2. Calculate the probability of permafrost during historical period.
-    # 3. Output "../Data/18_models_probability_lt_threshold_{depth}.nc".
+    # 3. Output "../Data/probability_lt_threshold_{depth}.nc".
 ###
 
 import glob
