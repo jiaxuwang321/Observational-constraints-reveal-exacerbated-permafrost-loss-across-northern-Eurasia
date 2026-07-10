@@ -1,6 +1,6 @@
 # Manuscript Code Repository 
 **Observational constraints reveal exacerbated permafrost loss across northern Eurasia (submitted)**  
-([https://doi.org/10.5281/zenodo.17196880](https://doi.org/10.5281/zenodo.20210025))
+
 Git project initialized: 15 Sep 2025  
 
 ---
@@ -60,7 +60,7 @@ This routine is to calculate the seasonal sensitivity of soil temperature using 
 ---
 
 ### Plot/  
-The **Plot** folder contains all plotting scripts (20 Jupyter notebooks in Python) used to generate the figures presented in the manuscript.
+The **Plot** folder contains all plotting scripts (21 Jupyter notebooks in Python) used to generate the figures presented in the manuscript.
 
 - Each notebook is named according to the figure number in the paper.  
 - Input data are obtained either from the raw datasets or from the outputs of the **Process/** folder.  
